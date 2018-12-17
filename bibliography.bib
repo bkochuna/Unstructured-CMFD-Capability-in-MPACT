@@ -1,0 +1,141 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for Seth Johnson at 2010-01-15 15:01:56 -0500 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+@article{Kelley2015,
+abstract = {A new “2D/1D” equation is proposed to approximate the 3D linear Boltzmann equation. The approximate 2D/1D equation preserves the exact transport physics in the radial directions x and y but employs diffusion physics in the axial direction z. The 2D/1D equation can be systematically discretized, yielding accurate simulation methods for 3D reactor core problems. The resulting 2D/1D solutions are more accurate than 3D diffusion solutions, and are less expensive to calculate than standard 3D transport solutions. In this paper, we (i) show that the simplest 2D/1D equation has certain desirable properties, (ii) systematically discretize this equation, (iii) derive stable iteration schemes for solving the discrete system of equations, and (iv) give numerical results for simple problems that confirm the theoretical predictions of accuracy and iterative stability.},
+author = {Kelley, Blake W. and Larsen, Edward W.},
+doi = {10.1016/J.NUCENGDES.2015.07.026},
+file = {:C$\backslash$:/Users/bkochuna/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Kelley, Larsen - 2015 - A consistent 2D1D approximation to the 3D neutron transport equation.pdf:pdf},
+issn = {0029-5493},
+journal = {Nuclear Engineering and Design},
+pages = {598--614},
+publisher = {North-Holland},
+title = {{A consistent 2D/1D approximation to the 3D neutron transport equation}},
+url = {https://www.sciencedirect.com/science/article/pii/S0029549315002964},
+volume = {295},
+year = {2015}
+}
+@article{Yee2017,
+abstract = {In this paper, we present a new multilevel in space and energy diffusion (MSED) method for solving multigroup diffusion eigenvalue problems. The MSED method can be described as a PI scheme with three additional features: (1) a grey (one-group) diffusion equation used to efficiently converge the fission source and eigenvalue, (2) a space-dependent Wielandt shift technique used to reduce the number of PIs required, and (3) a multigrid-in-space linear solver for the linear solves required by each PI step. In MSED, the convergence of the solution of the multigroup diffusion eigenvalue problem is accelerated by performing work on lower-order equations with only one group and/or coarser spatial grids. Results from several Fourier analyses and a one-dimensional test code are provided to verify the efficiency of the MSED method and to justify the incorporation of the grey diffusion equation and the multigrid linear solver. These results highlight the potential efficiency of the MSED method as a solver for multidimensional multigroup diffusion eigenvalue problems, and they serve as a proof of principle for future work. Our ultimate goal is to implement the MSED method as an efficient solver for the two-dimensional/three-dimensional coarse mesh finite difference diffusion system in the Michigan parallel characteristics transport code. The work in this paper represents a necessary step towards that goal.},
+author = {Yee, Ben C. and Kochunas, Brendan and Larsen, Edward W.},
+doi = {10.1016/J.NET.2017.07.014},
+file = {:C$\backslash$:/Users/bkochuna/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Yee, Kochunas, Larsen - 2017 - A multilevel in space and energy solver for multigroup diffusion eigenvalue problems.pdf:pdf},
+issn = {1738-5733},
+journal = {Nucl. Eng. and Technol.},
+pages = {1125--1134},
+publisher = {Elsevier},
+title = {{A multilevel in space and energy solver for multigroup diffusion eigenvalue problems}},
+url = {https://www.sciencedirect.com/science/article/pii/S1738573317303169},
+volume = {49},
+year = {2017}
+} 
+@techreport{SCALE2009,
+institution = {Oak Ridge National Lab},
+title = {SCALE: A Modular Code System for Performing Standardized Computer Analyses for Licensing Evaluation, Vols. I-III},
+address = {Oak Ridge, TN},
+year = {2009}
+}
+@techreport{MPACT2016,
+author = {{MPACT Team}},
+file = {:home/apfitzge/research/papers/MendeleyManager/MPACT{\_}theory{\_}2016.pdf:pdf},
+institution = {Consortium for Advanced Simulation of Light Water Reactors},
+isbn = {1800553684},
+keywords = {CASL-U-2016-1107-000},
+mendeley-tags = {CASL-U-2016-1107-000},
+title = {{MPACT Theory Manual v2.2.0}},
+year = {2016}
+}
+@article{Breil2007,
+abstract = {We propose a new cell-centered diffusion scheme on unstructured meshes. The main feature of this scheme lies in the introduction of two normal fluxes and two temperatures on each edge. A local variational formulation written for each corner cell provides the discretization of the normal fluxes. This discretization yields a linear relation between the normal fluxes and the temperatures defined on the two edges impinging on a node. The continuity of the normal fluxes written for each edge around a node leads to a linear system. Its resolution allows to eliminate locally the edge temperatures as function of the mean temperature in each cell. In this way, we obtain a small symmetric positive definite matrix located at each node. Finally, by summing all the nodal contributions one obtains a linear system satisfied by the cell-centered unknowns. This system is characterized by a symmetric positive definite matrix. We show numerical results for various test cases which exhibit the good behavior of this new scheme. It preserves the linear solutions on a triangular mesh. It reduces to a classical five-point scheme on rectangular grids. For non orthogonal quadrangular grids we obtain an accuracy which is almost second order on smooth meshes.},
+author = {Breil, J{\'{e}}r{\^{o}}me and Maire, Pierre-Henri},
+doi = {10.1016/J.JCP.2006.10.025},
+file = {:C$\backslash$:/Users/bkochuna/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Breil, Maire - 2007 - A cell-centered diffusion scheme on two-dimensional unstructured meshes.pdf:pdf},
+issn = {0021-9991},
+journal = {J. of Comp. Phys.},
+pages = {785--823},
+publisher = {Academic Press},
+title = {{A cell-centered diffusion scheme on two-dimensional unstructured meshes}},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999106005493},
+volume = {224},
+year = {2007}
+}
+@article{Palmer2001,
+abstract = {We derive a discretization of the two-dimensional diffusion equation for use with unstructured meshes of polygons. The scheme is presented in r–z geometry, but can easily be applied to x–y geometry. The method is “node”- or “point”-based and is constructed using a finite volume approach. The scheme is designed to have several important properties, including second-order accuracy, convergence to the exact result as the mesh is refined (regardless of the smoothness of the grid), and preservation of the homogeneous linear solution. Its principle disadvantage is that, in general, it generates an asymmetric coefficient matrix, and therefore requires more storage and the use of non-traditional, and sometimes slowly-converging, iterative linear solvers. On an unstructured triangular grid in x–y geometry, the scheme is equivalent to the linear continuous finite element method with “mass-matrix lumping”. We give computational examples that demonstrate the accuracy and convergence properties of the new scheme relative to other schemes.},
+author = {Palmer, Todd S.},
+doi = {10.1016/S0306-4549(01)00007-X},
+file = {:C$\backslash$:/Users/bkochuna/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Palmer - 2001 - Discretizing the diffusion equation on unstructured polygonal meshes in two dimensions.pdf:pdf},
+issn = {0306-4549},
+journal = {Ann. Nucl. Energy},
+pages = {1851--1880},
+publisher = {Pergamon},
+title = {{Discretizing the diffusion equation on unstructured polygonal meshes in two dimensions}},
+url = {https://www.sciencedirect.com/science/article/pii/S030645490100007X},
+volume = {28},
+year = {2001}
+}
+@techreport{Larsen1978,
+author = {Larsen, N.H.},
+file = {:C$\backslash$:/Users/bkochuna/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Larsen - 1978 - Core Design and Operating Data for Cycle 1 and 2 of Peach Bottom 2.pdf:pdf},
+institution = {EPRI NP-563},
+title = {{Core Design and Operating Data for Cycle 1 and 2 of Peach Bottom 2}},
+year = {1978}
+}
+@article{Kim2011,
+abstract = {The NEWT (NEW Transport algorithm) code is a multi-group discrete ordinates neutral-particle transport code with flexible meshing capabilities. This code employs the Extended Step Characteristic spatial discretization approach using arbitrary polygonal mesh cells. Until recently, the coarse mesh finite difference acceleration scheme in NEWT for fission source iteration has been available only for rectangular domain boundaries because of the limitation to rectangular coarse meshes. Therefore no acceleration scheme has been available for triangular or hexagonal problem boundaries. A conventional and a new partial-current based coarse mesh finite difference acceleration schemes with unstructured coarse meshes have been implemented within NEWT to support any form of domain boundaries. The computational results show that the new acceleration schemes works well, with performance often improved over the earlier two-level rectangular approach.},
+author = {Kim, Kang Seog and DeHart, Mark D.},
+doi = {10.1016/J.ANUCENE.2010.09.011},
+file = {:C$\backslash$:/Users/bkochuna/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Kim, DeHart - 2011 - Unstructured partial- and net-current based coarse mesh finite difference acceleration applied to the extended s(2).pdf:pdf},
+issn = {0306-4549},
+journal = {Ann. Nucl. Energy},
+pages = {527--534},
+publisher = {Pergamon},
+title = {{Unstructured partial- and net-current based coarse mesh finite difference acceleration applied to the extended step characteristics method in NEWT}},
+url = {https://www.sciencedirect.com/science/article/pii/S0306454910003312{\#}f0005},
+volume = {38},
+year = {2011}
+}
+@article{CHO2008,
+author = {CHO, Jin Young and KIM, Kang Seog and SHIM, Hyung Jin and SONG, Jae Seung and LEE, Chung Chan and JOO, Han Gyu},
+doi = {10.1080/18811248.2008.9711475},
+file = {:C$\backslash$:/Users/bkochuna/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/CHO et al. - 2008 - Whole Core Transport Calculation Employing Hexagonal Modular Ray Tracing and CMFD Formulation.pdf:pdf},
+issn = {0022-3131},
+journal = {J. of Nucl. Sci. and Tech.},
+pages = {740--751},
+title = {{Whole Core Transport Calculation Employing Hexagonal Modular Ray Tracing and CMFD Formulation}},
+url = {http://www.tandfonline.com/doi/abs/10.1080/18811248.2008.9711475},
+volume = {45},
+year = {2008}
+}
+@inproceedings{Kochunas2017,
+abstract = {In this paper we present the recent advances in MPACT for modeling Boiling Water Reactors. The new features of the VERA input are briefly described. The app roach to the general geometry meshing algorithm is based on the use of planar graphs and algorithms for computing the minimum cycle basis of the graph. The visualization capability for the general geometry uses a Delauney triangulation algorithm to construct the mesh points for VTK. The BWR capability based on these algorithms allows for the modeling and analysis of (i) narrow and wide inter-assembly gaps, (ii) channel boxes with rounded corners, (iii) cruciform control blades. Models of Peach Bottom Unit 2 cycle 1 lattices are developed in VERA for MPACT and KENO models are developed to provide reference solutions. The solutions of the two codes are compared and the average of the differences over the 6 lattices had a $\Delta$k of 97 pcm for the unrodded cases and 199 pcm for the rodded cases. The average pin power RMS was 0.24{\%} and 0.28{\%} for the unrodded and rodded cases, respectively. The average maximum difference was 0.46{\%} for the unrodded cases and 0.90{\%} for the rodded case. The BWR capability is also demonstrated for a variety of problems including: a 3-D control cell of "GE-12 like" assemblies with a partially inserted control rod, and a 2-D whole-core beginning of life state for Peach Bottom Unit 2.},
+address = {Jeju},
+author = {Kochunas, Brendan and Jabaay, Daniel and Fitzgerald, Andrew and Downar, Thomas J. and Palmtag, Scott},
+booktitle = {Proc. of M{\&}C 2017},
+file = {:C$\backslash$:/Users/bkochuna/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Kochunas et al. - 2017 - Initial BWR Modeling Capability for MPACT.pdf:pdf},
+title = {{Initial BWR Modeling Capability for MPACT}},
+year = {2017}
+}
+@inproceedings{Smith2002,
+abstract = {Modern large-memory computers have made possible direct application of lattice transport methods to large-scale computational models of LWR cores. However, many acceleration techniques common to lattice transport codes are not applicable to heterogeneous-geometry, high-dominance-ratio, eigenvalue problems. Consequently, large heterogeneous LWR problems have remained computationally intensive and impractical for routine applications.$\backslash$nThis paper presents new synthetic acceleration methods that achieve speedups of more than a factor of 100 on large LWR problems. These acceleration techniques are non-linear, and they permit dramatic acceleration without geometrical limitations normally associated with traditional acceleration techniques, such as DSA. These new acceleration methods have been incorporated into the CASMO- 4E lattice physics code, and they make practical the application of lattice transport methods to 2-D, whole-core, LWR computations - complete with fuel depletion and shuffling.},
+author = {Smith, Kord and Rhodes, Joel},
+file = {:C$\backslash$:/Users/bkochuna/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Smith, Rhodes - 2002 - Full-core, 2-D, LWR core calculations with CASMO-4E.pdf:pdf},
+booktitle = {Proc. of Physor 2002},
+title = {{Full-core, 2-D, LWR core calculations with CASMO-4E}},
+url = {http://mathematicsandcomputation.freezoka.net/PHYSOR02/Papers/13A-04.pdf{\%}5Cnpapers3://publication/uuid/10FDC29A-B2FF-47A0-ABE1-6F1B2590443D},
+year = {2002}
+}
+@inproceedings{Thomas2006,
+abstract = {The geometry module of the DeCART direct whole core calculation code has been extended in order to analyze BWR cores which might have a mixed loading of different fuel types. First, an assembly based modular ray tracing scheme was implemented for the Method of Characteristic (MOC) calculation, and a CMFD formulation applicable for unaligned mesh conditions was then developed for acceleration the MOC calculation. The new calculation feature has been validated by comparing DeCART BWR assembly calculations with the MCU Monte Carlo calculations. A good agreement identified by the maximum eigenvalue difference of 120 pcm and the maximum pin power error of about 1{\%} has been achieved. The CMFD scheme is shown to reduce the number of MOC iterations by factors of 12-25 without loss of accuracy.},
+author = {Thomas, J.W. and Joo, H.G. and Xu, Y. and Kalugin, M. and Kochunas, B. and Downar, T.J.},
+booktitle = {Proc. of ICAPP'06},
+file = {:C$\backslash$:/Users/bkochuna/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Thomas et al. - 2006 - Assembly based modular ray tracing and CMFD acceleration for BWR cores with different fuel lattices.pdf:pdf},
+isbn = {0894486985},
+title = {{Assembly based modular ray tracing and CMFD acceleration for BWR cores with different fuel lattices}},
+volume = {2006},
+year = {2006}
+}
